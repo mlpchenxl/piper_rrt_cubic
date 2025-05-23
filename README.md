@@ -14,21 +14,6 @@
 conda create -n piper_planning_env python=3.10.13
 ```
 
-#### Install cuda 11.8 (Follow these steps) :
-
-``` bash
-wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
-
-sudo sh cuda_11.8.0_520.61.05_linux.run
-
-vim ~/.bashrc
-
-# 添加
-export PATH=$PATH:/usr/local/cuda-11.8/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.8/lib64
-```
-
-
 #### 激活虚拟环境
  
 ```bash
@@ -60,6 +45,14 @@ pip install numpy==1.24.0 (忽略cmeel-boost版本报错)
 
 ```bash
 cd ..
-python python piper_example.py
+python piper_example.py
 ```
 
+## :heavy_exclamation_mark: Trouble Shotting
+1. If you encounter the problem of: ```ImportError: /lib/x86_64-linux-gnu/libboost_python38.so.1.71.0: undefined symbol: _Py_fopen```
+
+    To solve it, do:
+    ```
+    conda install pinocchio -c conda-forge 
+    ```
+2. TODO
