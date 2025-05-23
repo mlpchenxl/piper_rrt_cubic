@@ -1,0 +1,7 @@
+.coverage
+
+.virtualenvs/
+
+dist/
+**__pycache__/
+**.egg-info/
