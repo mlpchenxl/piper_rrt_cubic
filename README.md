@@ -41,7 +41,14 @@ conda activate piper_planning_env
 pip install torch==2.2.1+cu118 torchvision==0.17.1+cu118 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-### 2. Install (Must to do)
+### 2. Clone repo
+
+```
+git clone git@github.com:mlpchenxl/piper_rrt_cubic.git
+cd piper_rrt_cubic
+```
+
+### 3. Install (Must to do)
 - Intsall pyroboplan
 ```bash
 cd pyroboplan
@@ -49,7 +56,7 @@ pip install -e .
 pip install numpy==1.24.0 (忽略cmeel-boost版本报错)
 ```
 
-### 3. Example
+### 4. Example
 
 ```bash
 cd ..
