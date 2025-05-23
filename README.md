@@ -53,6 +53,6 @@ python piper_example.py
 
     To solve it, do:
     ```
-    conda install pinocchio -c conda-forge 
+    conda install pinocchio -c conda-forge # IF you could, do not using tsinghua source
     ```
 2. TODO
