@@ -23,7 +23,7 @@ sudo sh cuda_11.8.0_520.61.05_linux.run
 
 vim ~/.bashrc
 
-添加
+# 添加
 export PATH=$PATH:/usr/local/cuda-11.8/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.8/lib64
 ```
